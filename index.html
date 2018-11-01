@@ -1,57 +1,45 @@
 <!-- Coded by Harshit Seksaria -->
+
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Calculator</title>
-	<link rel="stylesheet" href="styles.css" />
-	<script src="main.js"></script>
-</head>
-<body>
-	<div id="wrapper" onload="pageStarted(this)">
-		<h1 id="heading">           Calculator</h1>
-
-		<div id="history">
-			
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Calculator</title>
+		<link rel="stylesheet" href="styles.css" />
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1 id="heading">Calculator</h1>
+			<div id="content">
+				<div id="history"></div>
+				<div id="screen-text">0</div>
+				<div id="top-section">
+						<input type="button" onclick="buttonSevenPressed()" class="button" value="7">
+						<input type="button" onclick="buttonEightPressed()" class="button" value="8">
+						<input type="button" onclick="buttonNinePressed()" class="button" value="9">
+						<input type="button" onclick="buttonPlusPressed()" class="button" value="+">
+				</div>
+				<div id="middle-section">
+						<input type="button" onclick="buttonFourPressed()" class="button" value="4">
+						<input type="button" onclick="buttonFivePressed()" class="button" value="5">
+						<input type="button" onclick="buttonSixPressed()" class="button" value="6">
+						<input type="button" onclick="buttonMinusPressed()" class="button" value="-">
+				</div>
+				<div id="bottom-section">
+						<input type="button" onclick="buttonOnePressed()" class="button" value="1">
+						<input type="button" onclick="buttonTwoPressed()" class="button" value="2">
+						<input type="button" onclick="buttonThreePressed()" class="button" value="3">
+						<input type="button" onclick="buttonMultiplyPressed()" class="button" value="*">
+				</div>
+				<div id="more-section">
+						<input style="border-bottom-left-radius: 10px" type="button" onclick="buttonClearPressed()" class="button" value="C">
+						<input type="button" onclick="buttonZeroPressed()" class="button" value="0">
+						<input type="button" onclick="buttonEqualPressed()" class="button" value="=">
+						<input style="border-bottom-right-radius: 10px" type="button" onclick="buttonDividePressed()" class="button" value="/">
+				</div>
+			</div>
 		</div>
-
-		<div id="screen">
-			<p id="screen-text">0</p>
-		</div>
-
-		<div id="buttons">
-
-			<div id="top-section">
-					<input type="button" onclick="buttonSevenPressed()" class="button" value="7">
-					<input type="button" onclick="buttonEightPressed()" class="button" value="8">
-					<input type="button" onclick="buttonNinePressed()" class="button" value="9">
-					<input type="button" onclick="buttonPlusPressed()" class="button" value="+">
-			</div>
-
-			<div id="middle-section">
-					<input type="button" onclick="buttonFourPressed()" class="button" value="4">
-					<input type="button" onclick="buttonFivePressed()" class="button" value="5">
-					<input type="button" onclick="buttonSixPressed()" class="button" value="6">
-					<input type="button" onclick="buttonMinusPressed()" class="button" value="-">
-			</div>
-
-			<div id="bottom-section">
-					<input type="button" onclick="buttonOnePressed()" class="button" value="1">
-					<input type="button" onclick="buttonTwoPressed()" class="button" value="2">
-					<input type="button" onclick="buttonThreePressed()" class="button" value="3">
-					<input type="button" onclick="buttonMultiplyPressed()" class="button" value="*">
-			</div>
-
-			<div id="more-section">
-					<input type="button" onclick="buttonClearPressed()" class="button" value="C">
-					<input type="button" onclick="buttonZeroPressed()" class="button" value="0">
-					<input type="button" onclick="buttonEqualPressed()" class="button" value="=">
-					<input type="button" onclick="buttonDividePressed()" class="button" value="/">
-			</div>
-			
-		</div>
-
-	</div>
-</body>
+	</body>
 </html>
