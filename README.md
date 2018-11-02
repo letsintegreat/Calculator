@@ -7,7 +7,7 @@ So, This application is compitable for all the display sizes and for mobile devi
 **Here is the screenshot of the app:**  
 ![](https://i.stack.imgur.com/fUw2W.png)
 
-Attractive, isn't it?
+Attractive, isn't it?  
 And yes, the background is also created by me. Thanks to [Gravit Designer](https://www.designer.io/).
 
 And I think that everybody knows how a Calculator works, so it is required to explain its working.
