@@ -10,6 +10,6 @@ So, This application is compitable for all the display sizes and for mobile devi
 Attractive, isn't it?  
 And yes, the background is also created by me. Thanks to [Gravit Designer](https://www.designer.io/).
 
-And I think that everybody knows how a Calculator works, so it is required to explain its working.
+And I think that everybody knows how a Calculator works, so it isn't required to explain its working.
 
 Right now, This Calculator doesn't support decimal calculations, But That will be added soon!
