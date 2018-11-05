@@ -1,100 +1,39 @@
 /* Coded by Harshit Seksaria */
 
-let firstOperatorPressed = false;
-let firstOperand = 0;
-let secondOperand = 0;
-let currentOperator = '';
-let operatorPressedRecently = false;
+var query = '';
+const screen = document.getElementById('screen-text');
+const history = document.getElementById('history');
 
 // When user clicks on any numeric button, this function will be executed
 function buttonPressed(number) {
-    let currentNumber = document.getElementById('screen-text').innerHTML;
-
-    if (currentNumber == '0' || operatorPressedRecently) {
-        var changedNumber = number;
-    } else {
-        var changedNumber = currentNumber + number;
-    }
-
-    document.getElementById('screen-text').innerHTML = changedNumber;
-    
-    operatorPressedRecently = false;
+    let currentNumber = screen.innerHTML;
+    screen.innerHTML = currentNumber == '0'
+        ? number
+        : currentNumber + number;
 }
 
 // function when any operator is pressed
 function buttonOperatorPressed(operator) {
-    operatorPressedRecently = true;
+    query += screen.innerHTML
+          + operator;
 
-    if (firstOperatorPressed) {
-        secondOperand = parseInt(document.getElementById('screen-text').innerHTML);
+    history.innerHTML += screen.innerHTML + ' '
+                      + operator + ' ';
 
-        switch(currentOperator) {
-            case '+':
-                firstOperand = firstOperand + secondOperand;
-                break;
-            
-            case '-':
-                firstOperand = firstOperand - secondOperand;
-                break;
-
-            case '*':
-                firstOperand = firstOperand * secondOperand;
-                break;
-
-            case '/':
-                firstOperand = firstOperand / secondOperand;
-        }
-
-        document.getElementById('screen-text').innerHTML = firstOperand;
-        document.getElementById('history').innerHTML += ' ' + currentOperator + ' ' + secondOperand;
-    } else {
-        firstOperand = parseInt(document.getElementById('screen-text').innerHTML);
-        document.getElementById('screen-text').innerHTML = '0';
-        document.getElementById('history').innerHTML = firstOperand;
-    }
-
-    firstOperatorPressed = true;
-    currentOperator = operator;
+    screen.innerHTML = '0';
 }
 
-// function when = is pressed
+// function when '=' is pressed
 function buttonEqualPressed() {
+    history.innerHTML += screen.innerHTML;
 
-    operatorPressedRecently = true;
-
-    if(firstOperatorPressed) {
-        secondOperand = parseInt(document.getElementById('screen-text').innerHTML);
-        
-        switch(currentOperator) {
-            case '+':
-                firstOperand = firstOperand + secondOperand;
-                break;
-            
-            case '-':
-                firstOperand = firstOperand - secondOperand;
-                break;
-
-            case '*':
-                firstOperand = firstOperand * secondOperand;
-                break;
-
-            case '/':
-                firstOperand = firstOperand / secondOperand;
-        }
-
-        document.getElementById('screen-text').innerHTML = firstOperand;
-
-        firstOperand = parseInt(document.getElementById('screen-text').innerHTML);
-        firstOperatorPressed = false;
-        document.getElementById('history').innerHTML = document.getElementById('screen-text').innerHTML;
-    }
+    query += screen.innerHTML;
+    screen.innerHTML = eval(query);
 }
 
+// function when 'C' is pressed
 function buttonClearPressed() {
-    document.getElementById('screen-text').innerHTML = '0';
-    firstOperand = 0;
-    secondOperand = 0;
-    firstOperatorPressed = false;
-    currentOperator = '';
-    document.getElementById('history').innerHTML = '';
+    screen.innerHTML = '0';
+    history.innerHTML = '';
+    query = '';
 }
