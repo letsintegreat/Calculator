@@ -7,7 +7,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<title>Calculator</title>
 		<link rel="stylesheet" href="styles.css" />
-		<script src="main.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
@@ -31,15 +30,16 @@
 						<input type="button" onclick="buttonPressed('1')" class="button" value="1">
 						<input type="button" onclick="buttonPressed('2')" class="button" value="2">
 						<input type="button" onclick="buttonPressed('3')" class="button" value="3">
-						<input type="button" onclick="buttonOperatorPressed('*')" class="button" value="*">
+						<input type="button" onclick="buttonOperatorPressed('*')" class="button" value="&times">
 				</div>
 				<div id="more-section">
 						<input style="border-bottom-left-radius: 10px" type="button" onclick="buttonClearPressed()" class="button" value="C">
 						<input type="button" onclick="buttonPressed('0')" class="button" value="0">
 						<input type="button" onclick="buttonEqualPressed()" class="button" value="=">
-						<input style="border-bottom-right-radius: 10px" type="button" onclick="buttonOperatorPressed('/')" class="button" value="/">
+						<input style="border-bottom-right-radius: 10px" type="button" onclick="buttonOperatorPressed('/')" class="button" value="&divide">
 				</div>
 			</div>
 		</div>
+		<script src="main.js"></script>
 	</body>
 </html>
