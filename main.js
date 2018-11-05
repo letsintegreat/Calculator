@@ -28,7 +28,12 @@ function buttonEqualPressed() {
     history.innerHTML += screen.innerHTML;
 
     query += screen.innerHTML;
-    screen.innerHTML = eval(query);
+    try {
+        screen.innerHTML = eval(query);
+    } catch (err) {
+        alert('Bad math expression');
+        buttonClearPressed();
+    }
 }
 
 // function when 'C' is pressed
