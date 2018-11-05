@@ -1,5 +1,5 @@
 # Calculator
-Here is a Calculator application designed with `HTML`, `CSS` and coded in `JavaScript` all done by [Harshit Seksaria](https://github.com/HarshitSeksaria)
+Here is a Calculator application designed with **HTML**, **CSS** and coded in **JavaScript** all done by [Harshit Seksaria](https://github.com/HarshitSeksaria)
 
 The Calculator works smoothly, and this application is designed with keeping this point in mind that it should look cool in every display sizes and even on mobile devices.
 So, This application is compitable for all the display sizes and for mobile devices as well.
