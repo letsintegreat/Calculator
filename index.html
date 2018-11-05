@@ -2,44 +2,44 @@
 
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>Calculator</title>
-		<link rel="stylesheet" href="styles.css" />
-	</head>
-	<body>
-		<div id="wrapper">
-			<h1 id="heading">Calculator</h1>
-			<div id="content">
-				<div id="history"></div>
-				<div id="screen-text">0</div>
-				<div id="top-section">
-						<input type="button" onclick="buttonPressed('7')" class="button" value="7">
-						<input type="button" onclick="buttonPressed('8')" class="button" value="8">
-						<input type="button" onclick="buttonPressed('9')" class="button" value="9">
-						<input type="button" onclick="buttonOperatorPressed('+')" class="button" value="+">
-				</div>
-				<div id="middle-section">
-						<input type="button" onclick="buttonPressed('4')" class="button" value="4">
-						<input type="button" onclick="buttonPressed('5')" class="button" value="5">
-						<input type="button" onclick="buttonPressed('6')" class="button" value="6">
-						<input type="button" onclick="buttonOperatorPressed('-')" class="button" value="-">
-				</div>
-				<div id="bottom-section">
-						<input type="button" onclick="buttonPressed('1')" class="button" value="1">
-						<input type="button" onclick="buttonPressed('2')" class="button" value="2">
-						<input type="button" onclick="buttonPressed('3')" class="button" value="3">
-						<input type="button" onclick="buttonOperatorPressed('*')" class="button" value="&times">
-				</div>
-				<div id="more-section">
-						<input style="border-bottom-left-radius: 10px" type="button" onclick="buttonClearPressed()" class="button" value="C">
-						<input type="button" onclick="buttonPressed('0')" class="button" value="0">
-						<input type="button" onclick="buttonEqualPressed()" class="button" value="=">
-						<input style="border-bottom-right-radius: 10px" type="button" onclick="buttonOperatorPressed('/')" class="button" value="&divide">
-				</div>
-			</div>
-		</div>
-		<script src="main.js"></script>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <h1 id="heading">Calculator</h1>
+            <div id="content">
+                <div id="history"></div>
+                <div id="screen-text">0</div>
+                <div id="top-section">
+                    <input type="button" onclick="buttonPressed('7')" class="button" value="7">
+                    <input type="button" onclick="buttonPressed('8')" class="button" value="8">
+                    <input type="button" onclick="buttonPressed('9')" class="button" value="9">
+                    <input type="button" onclick="buttonOperatorPressed('+')" class="button" value="+">
+                </div>
+                <div id="middle-section">
+                    <input type="button" onclick="buttonPressed('4')" class="button" value="4">
+                    <input type="button" onclick="buttonPressed('5')" class="button" value="5">
+                    <input type="button" onclick="buttonPressed('6')" class="button" value="6">
+                    <input type="button" onclick="buttonOperatorPressed('-')" class="button" value="-">
+                </div>
+                <div id="bottom-section">
+                    <input type="button" onclick="buttonPressed('1')" class="button" value="1">
+                    <input type="button" onclick="buttonPressed('2')" class="button" value="2">
+                    <input type="button" onclick="buttonPressed('3')" class="button" value="3">
+                    <input type="button" onclick="buttonOperatorPressed('*')" class="button" value="&times">
+                </div>
+                <div id="more-section">
+                    <input style="border-bottom-left-radius: 10px" type="button" onclick="buttonClearPressed()" class="button" value="C">
+                    <input type="button" onclick="buttonPressed('0')" class="button" value="0">
+                    <input type="button" onclick="buttonEqualPressed()" class="button" value="=">
+                    <input style="border-bottom-right-radius: 10px" type="button" onclick="buttonOperatorPressed('/')" class="button" value="&divide">
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>
