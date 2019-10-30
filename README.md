@@ -8,7 +8,7 @@ So, This application is compitable for all the display sizes and for mobile devi
 ![](https://i.stack.imgur.com/fUw2W.png)
 
 Attractive, isn't it?  
-And yes, the background is also created by me. Thanks to [Gravit Designer](https://www.designer.io/).
+And yes, the background is created by me. Thanks to [Gravit Designer](https://www.designer.io/).
 
 And I think that everybody knows how a Calculator works, so it isn't required to explain its working.
 
